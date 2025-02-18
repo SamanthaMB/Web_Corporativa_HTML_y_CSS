@@ -1,6 +1,6 @@
 @font-face {
     /*Asignamos tipo de letra*/
-    font-family: 'BreakingBad', sans-serif;
+    font-family: 'BreakingBad';
     src: url('../fonts/BreakingBad.ttf')  format('truetype');
     font-weight: normal;
     font-style: normal;
@@ -47,7 +47,7 @@ body {
     font-weight: bold;
     color:white;
     text-align: center;
-    font-size: 24px;
+    font-size: 40px;
     padding: 10px;
 }
 
