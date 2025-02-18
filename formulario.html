@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Samantha Mohedano Barrena"/>
+    <meta name="copyright" content="Samantha Mohedano Barrena"/>
+    <!-- Insertamos favicon -->
+    <link rel="shortcut icon" href="img/icon.png" type="image/x-icon">
+    <!-- Insertamos CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <title>Breaking Bad – Formulario</title>
+</head>
+<body class="fondoformulario">
+    <div class="formulario">
+        <h1>Breaking Bad – ¡Que comience el juego!</h1>
+        <form name="formulario" action="mailto:raul.rodriguez@proeducaglobal.com" method="post">
+           <fieldset>
+                <legend>Datos Personales</legend>
+                    <label for="nombre">Nombre:</label><br>
+                        <input type="text" id="nombre" name="nombre" placeholder="Indica tu nombre" required ><br>
+                    <label for="apellidos">Apellidos:</label><br>
+                        <input type="text" id="apellidos" name="apellidos" placeholder="Indica tus apellidos"required><br>
+                    <label for="direccion">Dirección:</label><br>
+                        <input type="text" id="calle" name="calle" placeholder="Calle">
+                        <input type="number" id="numero" name="numero" placeholder="Número">
+                        <input type="text" id="piso" name="piso" placeholder="Piso">
+                        <input type="text" id="cp" name="cp" placeholder="Código Postal">
+                        <input type="text" id="ciudad" name="ciudad" placeholder="Ciudad"><br>
+                    <label for="dni">DNI:</label><br>
+                        <input type="text" id="dni" name="dni" placeholder="Dni"><br>
+                    <label for="email">Correo Electrónico:</label><br>
+                        <input type="email" id="email" name="email" placeholder="Email"required><br>
+            </fieldset>
+            <fieldset>
+                <legend>Sexo</legend>
+                    <input type="radio" name="sexo" value="hombre" id="hombre">
+                        <label for="hombre">Hombre</label><br> 
+                    <input type="radio" name="sexo" value="mujer" id="mujer"> 
+                        <label for="mujer">Mujer</label><br>
+            </fieldset>
+            <fieldset>
+                <legend>Fecha de Nacimiento</legend>
+                    <input type="date" id="fecha" name="fecha"><br>
+            </fieldset>
+            <fieldset>
+                <legend>Selecciona tu personaje favorito</legend>
+                    <select id="personaje"> 
+                        <option value="jessie">Jessie Pinkman</option>
+                        <option value="walter">Walter White</option>
+                        <option value="saul">Saul Goodman</option>
+                        <option value="gustavo">Gustavo Fring</option>
+                        <option value="pollos">Pollos Hermanos</option>
+                        <option value="otros">Otros personajes</option>
+                    </select><br>
+            </fieldset>
+            <fieldset>
+             <legend>Comentarios:</legend>
+                <textarea id="comentarios" name="comentarios">Escribe tus comentarios:</textarea><br>
+                <input type="submit" value="Enviar"> 
+                <input type="reset" value="Borrar">
+                <input type="file" name="adjunto" id="adjunto" accept=".pdf" multiple><br>
+            </fieldset>
+        </form>
+    </div>
+    
+</body>
+</html>
